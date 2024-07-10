@@ -24,10 +24,13 @@ while True:
             os.system('cls')
             print('Valor digitado não contém na lista.')
 
-    elif pergunta.startswith('l'):
-        os.system('cls')
-        for indice, nome in enumerate(lista):             
-             print(indice, nome) 
+    elif pergunta.startswith('l'):       
+        if len(lista) != 0:
+            for indice, nome in enumerate(lista):    
+                os.system('cls')         
+                print(indice, nome)
+        else:
+            print('Lista Vazia. ')
     
     elif pergunta.startswith('s'):
         os.system('cls')
