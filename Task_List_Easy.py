@@ -26,12 +26,12 @@ while True:
 
     elif pergunta.startswith('l'):       
         if len(lista) != 0:
-            for indice, nome in enumerate(lista):    
-                os.system('cls')         
+            os.system('cls')  
+            for indice, nome in enumerate(lista):           
                 print(indice, nome)
         else:
             print('Lista Vazia. ')
-    
+   
     elif pergunta.startswith('s'):
         os.system('cls')
         sair = input('Tem certeza que deseja sair? s/n ').strip().lower()
